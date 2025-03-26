@@ -1,11 +1,23 @@
+:root {
+    --main-font: 'Open Sans', sans-serif;
+    --title-font: 'Montserrat', sans-serif;
+}
+ 
 * {
     margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--main-font);
 }
 header {
     background-color: #ccd5ae;
     height: 100px;
     display: flex;
     align-items: center;
+}
+.title {
+    font-family: var(--title-font);
 }
 .container {
     display: flex;
@@ -27,6 +39,10 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.middle img {
+    width: 200px;
 }
 .right {
     background-color: #faedcd;
